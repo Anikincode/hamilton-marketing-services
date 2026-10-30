@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Google Search Console for Beginners | Hamilton SEO</title>
+<meta name="description" content="Google Search Console for beginners: how to set it up, the four reports a business owner should check, and the monthly habit that finds easy wins.">
+<link rel="canonical" href="https://anikincode.github.io/hamilton-seo-service/blog/google-search-console-for-business-owners/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Hamilton SEO">
+<meta property="og:title" content="Google Search Console for Beginners | Hamilton SEO">
+<meta property="og:description" content="Google Search Console for beginners: how to set it up, the four reports a business owner should check, and the monthly habit that finds easy wins.">
+<meta property="og:url" content="https://anikincode.github.io/hamilton-seo-service/blog/google-search-console-for-business-owners/">
+<meta property="og:image" content="https://anikincode.github.io/hamilton-seo-service/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0a0d14">
+<link rel="icon" href="/hamilton-seo-service/assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/hamilton-seo-service/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/hamilton-seo-service/assets/fonts/playfair-display-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/hamilton-seo-service/assets/site.css?v=d22a808e">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Google Search Console for beginners: a business owner's guide", "description": "Google Search Console for beginners: how to set it up, the four reports a business owner should check, and the monthly habit that finds easy wins.", "url": "https://anikincode.github.io/hamilton-seo-service/blog/google-search-console-for-business-owners/", "mainEntityOfPage": "https://anikincode.github.io/hamilton-seo-service/blog/google-search-console-for-business-owners/", "datePublished": "2026-10-30", "dateModified": "2026-10-30", "author": {"@type": "Person", "name": "Kirill Anikin", "jobTitle": "Founder", "url": "https://anikincode.github.io/hamilton-seo-service/team/"}, "publisher": {"@type": "ProfessionalService", "@id": "https://anikincode.github.io/hamilton-seo-service/#business", "name": "Hamilton SEO", "url": "https://anikincode.github.io/hamilton-seo-service/", "telephone": "+1-647-982-2545"}, "image": "https://anikincode.github.io/hamilton-seo-service/assets/og-image.png"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is Google Search Console free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. It's free for any website owner. You only need a Google account and a way to prove you own the site."}}, {"@type": "Question", "name": "What's the difference between Search Console and Google Analytics?", "acceptedAnswer": {"@type": "Answer", "text": "Search Console shows how people find you in Google Search, before they click. Analytics shows what they do once they're on your site. Both are free and they answer different questions."}}, {"@type": "Question", "name": "Does Search Console show my Google Maps results?", "acceptedAnswer": {"@type": "Answer", "text": "Search Console covers your website in Google Search. Your Google Business Profile has its own performance figures for calls, direction requests and website clicks from the profile. Check both."}}, {"@type": "Question", "name": "Should I give my SEO company access?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, as a user. Keep yourself as the owner so the account stays with your business if you ever change providers."}}, {"@type": "Question", "name": "What does average position mean?", "acceptedAnswer": {"@type": "Answer", "text": "It's roughly where your site appeared in the results, averaged across every time it showed. Position 1 is the top. It's a guide, not an exact spot, because results vary by searcher and location."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://anikincode.github.io/hamilton-seo-service/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://anikincode.github.io/hamilton-seo-service/blog/"}, {"@type": "ListItem", "position": 3, "name": "Search Console basics", "item": "https://anikincode.github.io/hamilton-seo-service/blog/google-search-console-for-business-owners/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<div class="preview-banner" role="note">Draft preview, not the live site. Highlighted items are waiting on the owner.</div>
+<!-- Inline SVG icon set (Lucide-style, 2px stroke). Partial: build.py puts it at the top of every page. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="g-accent" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4d82ff"/><stop offset="1" stop-color="#9966ff"/></linearGradient>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+    <symbol id="i-map" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.1 6.3 9.9 4.1a2 2 0 0 0-1.8 0L3.6 6.4A1 1 0 0 0 3 7.3v12.1a1 1 0 0 0 1.4.9l3.7-1.9a2 2 0 0 1 1.8 0l4.2 2.2a2 2 0 0 0 1.8 0l4.5-2.3a1 1 0 0 0 .6-.9V5.3a1 1 0 0 0-1.4-.9l-3.7 1.9a2 2 0 0 1-1.8 0z"/><path d="M15 6.7v14"/><path d="M9 3.3v14"/></symbol>
+    <symbol id="i-gear" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.2 2h-.4a2 2 0 0 0-2 2v.2a2 2 0 0 1-1 1.7l-.4.3a2 2 0 0 1-2 0l-.2-.1a2 2 0 0 0-2.7.7l-.2.4a2 2 0 0 0 .7 2.7l.2.1a2 2 0 0 1 1 1.7v.5a2 2 0 0 1-1 1.7l-.2.1a2 2 0 0 0-.7 2.7l.2.4a2 2 0 0 0 2.7.7l.2-.1a2 2 0 0 1 2 0l.4.3a2 2 0 0 1 1 1.7v.2a2 2 0 0 0 2 2h.4a2 2 0 0 0 2-2v-.2a2 2 0 0 1 1-1.7l.4-.3a2 2 0 0 1 2 0l.2.1a2 2 0 0 0 2.7-.7l.2-.4a2 2 0 0 0-.7-2.7l-.2-.1a2 2 0 0 1-1-1.7v-.5a2 2 0 0 1 1-1.7l.2-.1a2 2 0 0 0 .7-2.7l-.2-.4a2 2 0 0 0-2.7-.7l-.2.1a2 2 0 0 1-2 0l-.4-.3a2 2 0 0 1-1-1.7V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-pen" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.4 3.6a2.1 2.1 0 1 1 3 3L7 19l-4 1 1-4z"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.9 15.5A2 2 0 0 0 8.5 14l-6.1-1.6a.5.5 0 0 1 0-1L8.5 9.9A2 2 0 0 0 9.9 8.5l1.6-6.1a.5.5 0 0 1 1 0l1.6 6.1a2 2 0 0 0 1.4 1.4l6.1 1.6a.5.5 0 0 1 0 1l-6.1 1.6a2 2 0 0 0-1.4 1.4l-1.6 6.1a.5.5 0 0 1-1 0z"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></symbol>
+    <symbol id="i-layout" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.7 9a1 1 0 0 1-.6 0C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.2-2.7a1.2 1.2 0 0 1 1.6 0C14.5 3.8 17 5 19 5a1 1 0 0 1 1 1z"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="i-cart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2 2h3l2.7 12.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></symbol>
+    <symbol id="i-megaphone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 11 18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></symbol>
+  </defs>
+</svg>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="/hamilton-seo-service/"><img src="/hamilton-seo-service/assets/favicon.svg" alt="" width="32" height="32"><span class="brand-text"><span class="brand-name">Hamilton SEO</span><span class="brand-tag">Local &amp; AI search for Hamilton</span></span></a>
+    <nav class="primary" id="primary-nav" aria-label="Primary"><ul><li class="has-sub"><a href="/hamilton-seo-service/services/">Services<svg class="chev" aria-hidden="true"><use href="#i-chevron"/></svg></a><ul class="sub" aria-label="Services"><li><a href="/hamilton-seo-service/local-seo/">Local SEO</a></li><li><a href="/hamilton-seo-service/google-business-profile-optimization/">Google Business Profile</a></li><li><a href="/hamilton-seo-service/technical-seo/">Technical SEO</a></li><li><a href="/hamilton-seo-service/seo-audit/">SEO Audit</a></li><li><a href="/hamilton-seo-service/content-marketing/">SEO Content Writing</a></li><li><a href="/hamilton-seo-service/ai-search-optimization/">AI Search Optimization</a></li><li><a href="/hamilton-seo-service/web-design/">Web design</a></li><li><a href="/hamilton-seo-service/google-ads/">Google Ads</a></li><li><a href="/hamilton-seo-service/ecommerce-seo/">Ecommerce SEO</a></li><li><a href="/hamilton-seo-service/seo-consultant/">SEO consultant</a></li><li><a href="/hamilton-seo-service/wix-seo/">Wix SEO</a></li><li><a href="/hamilton-seo-service/wordpress-seo/">WordPress SEO</a></li><li><a href="/hamilton-seo-service/shopify-seo/">Shopify SEO</a></li><li><a href="/hamilton-seo-service/squarespace-seo/">Squarespace SEO</a></li><li><a href="/hamilton-seo-service/services/">All services</a></li></ul></li><li class="has-sub"><a href="/hamilton-seo-service/industries/">Industries<svg class="chev" aria-hidden="true"><use href="#i-chevron"/></svg></a><ul class="sub" aria-label="Industries"><li><a href="/hamilton-seo-service/plumber-seo-hamilton/">Plumber SEO</a></li><li><a href="/hamilton-seo-service/hvac-seo-hamilton/">HVAC SEO</a></li><li><a href="/hamilton-seo-service/contractor-seo-hamilton/">Contractor SEO</a></li><li><a href="/hamilton-seo-service/landscaper-seo-hamilton/">Landscaping SEO</a></li><li><a href="/hamilton-seo-service/cleaning-company-seo-hamilton/">Cleaning company SEO</a></li><li><a href="/hamilton-seo-service/moving-company-seo-hamilton/">Moving company SEO</a></li><li><a href="/hamilton-seo-service/auto-repair-seo-hamilton/">Auto repair SEO</a></li><li><a href="/hamilton-seo-service/home-inspector-seo-hamilton/">Home inspector SEO</a></li><li><a href="/hamilton-seo-service/appliance-repair-seo-hamilton/">Appliance repair SEO</a></li><li><a href="/hamilton-seo-service/restaurant-seo-hamilton/">Restaurant SEO</a></li><li><a href="/hamilton-seo-service/interior-designer-seo-hamilton/">Interior designer SEO</a></li><li><a href="/hamilton-seo-service/accountant-seo-hamilton/">Accountant SEO</a></li><li><a href="/hamilton-seo-service/industries/">All industries</a></li></ul></li><li class="has-sub"><a href="/hamilton-seo-service/areas/">Areas<svg class="chev" aria-hidden="true"><use href="#i-chevron"/></svg></a><ul class="sub" aria-label="Areas"><li><a href="/hamilton-seo-service/downtown-hamilton-seo/">Downtown Hamilton</a></li><li><a href="/hamilton-seo-service/hamilton-mountain-seo/">Hamilton Mountain</a></li><li><a href="/hamilton-seo-service/stoney-creek-seo/">Stoney Creek</a></li><li><a href="/hamilton-seo-service/ancaster-seo/">Ancaster</a></li><li><a href="/hamilton-seo-service/dundas-seo/">Dundas</a></li><li><a href="/hamilton-seo-service/waterdown-seo/">Waterdown</a></li><li><a href="/hamilton-seo-service/binbrook-seo/">Binbrook</a></li><li><a href="/hamilton-seo-service/burlington-seo/">Burlington</a></li><li><a href="/hamilton-seo-service/grimsby-seo/">Grimsby</a></li><li><a href="/hamilton-seo-service/areas/">All areas</a></li></ul></li><li class="has-sub"><a href="/hamilton-seo-service/resources/">Resources<svg class="chev" aria-hidden="true"><use href="#i-chevron"/></svg></a><ul class="sub" aria-label="Resources"><li><a href="/hamilton-seo-service/blog/">Blog</a></li><li><a href="/hamilton-seo-service/guides/">Buyer guides</a></li><li><a href="/hamilton-seo-service/pricing/">Pricing guides</a></li><li><a href="/hamilton-seo-service/resources/">Checklists &amp; templates</a></li><li><a href="/hamilton-seo-service/faq/">FAQ</a></li><li><a href="/hamilton-seo-service/methodology/">How we work</a></li></ul></li><li><a href="/hamilton-seo-service/pricing/">Pricing</a></li><li><a href="/hamilton-seo-service/about/">About</a></li></ul></nav>
+    <div class="bar-actions">
+      <a class="btn btn-primary btn-sm" href="/hamilton-seo-service/contact/">Free SEO audit</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Menu"><svg aria-hidden="true"><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<section class="page-hero"><div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/hamilton-seo-service/">Home</a> <span aria-hidden="true">/</span> <a href="/hamilton-seo-service/blog/">Blog</a> <span aria-hidden="true">/</span> <span aria-current="page">Search Console basics</span></nav>
+<p class="eyebrow">Blog</p>
+<h1>Google Search Console for beginners: a business owner's guide</h1>
+<p class="lede">Google keeps a free report on exactly how your website shows up in search. Most business owners have never opened it. Here's how to set it up and what to look at.</p>
+<p class="byline"><a href="/hamilton-seo-service/team/">Kirill Anikin</a> · <time datetime="2026-10-30">October 30, 2026</time> · 5 min read</p>
+</div></section>
+<section class="section article"><div class="wrap"><div class="prose"><div class="tldr"><h2>Key takeaways</h2><ul>
+<li>Google Search Console is a free tool that shows how Google sees your website: which pages are indexed, which searches you appear for and how many people click.</li>
+<li>Set it up once, submit your sitemap, then check four reports: Performance, Pages, URL Inspection and Core Web Vitals.</li>
+<li>Search Console measures. Keyword tools estimate. When they disagree, trust Search Console.</li>
+<li>The most valuable habit: find pages that rank well but don't get clicks, and fix their titles.</li>
+</ul></div>
+
+<p>Imagine Google kept a free logbook on your website. Every search you showed up for, how often, how many people clicked, and every page it couldn't read.</p>
+<p>It does. It's called Google Search Console, and most business owners have never opened theirs.</p>
+<p>This guide is Google Search Console for beginners. No jargon, just what to set up and what to look at.</p>
+
+<h2>What is Google Search Console?</h2>
+<p>Search Console is Google's free tool for website owners. It doesn't show you what visitors do on your site. It shows how your site performs in Google Search before anyone clicks.</p>
+<p>Think of it as the view from Google's side of the counter. Which of your pages it has in its index, which searches it shows them for, and what problems it ran into.</p>
+<p>It's real data from Google. That makes it different from keyword tools, which estimate.</p>
+
+<h2>How to set it up</h2>
+<ol>
+<li><strong>Go to <a href="https://search.google.com/search-console">Google Search Console</a></strong> and sign in with the Google account your business uses.</li>
+<li><strong>Add a property.</strong> A "Domain" property covers your whole site, including every version of the address. It's verified with a DNS record at your domain registrar. A "URL prefix" property covers one version of the address and can be verified in other ways.</li>
+<li><strong>Verify ownership.</strong> Follow the steps Google gives you. Some website builders can connect Search Console for you from their SEO settings.</li>
+<li><strong>Submit your sitemap</strong> in the Sitemaps report. Your sitemap is the list of pages you want Google to know about.</li>
+<li><strong>Add your SEO person as a user.</strong> Keep yourself as the owner, so the account stays with your business.</li>
+</ol>
+
+<h2>The Performance report: which searches bring people in</h2>
+<p>This is the report you'll use most. It shows four numbers:</p>
+<ul>
+<li><strong>Impressions:</strong> how many times your site appeared in search results.</li>
+<li><strong>Clicks:</strong> how many times someone clicked through.</li>
+<li><strong>Click-through rate:</strong> clicks divided by impressions.</li>
+<li><strong>Average position:</strong> roughly where you appeared, with 1 being the top.</li>
+</ul>
+<p>Click the Queries tab to see the actual searches. You can filter them, too. Filter for queries containing "stoney creek" or "ancaster" to see how you're doing in each part of your service area.</p>
+
+<h3>The story hiding in the numbers</h3>
+<p>Here's a real example from our own site. Search Console showed a page sitting at an average position of 3 to 5, with zero clicks from 233 impressions.</p>
+<p>That's not a ranking problem. The page was ranking well. People were seeing it and choosing something else. That points to the title and description, the two lines people read in the results.</p>
+<p>That's the most valuable habit in Search Console. Find pages with plenty of impressions, a decent position and weak clicks. Rewrite their titles to match what people searched for. Then check again after 30 days.</p>
+<p>One caution: compare like with like. Many searches are seasonal. A furnace company's summer numbers will look different from its winter numbers, whatever the SEO is doing.</p>
+
+<h2>The Pages report: is Google indexing your site?</h2>
+<p>If a page isn't indexed, it can't rank. This report shows which of your pages Google has indexed and which it hasn't, with a reason for each.</p>
+<p>Two reasons are worth knowing well, because we've found both on real local sites:</p>
+<ul>
+<li><strong>"Discovered – currently not indexed".</strong> Google knows the page exists but hasn't added it. On one site we checked, Google had indexed about 5 of its 48 pages, and the rest sat here. Our article on <a href="/hamilton-seo-service/blog/discovered-not-indexed/">"Discovered – currently not indexed"</a> explains what to do about it.</li>
+<li><strong>Blocked by robots.txt.</strong> A small file is telling Google to stay out. We once found a live site whose robots.txt blocked all indexing, so Google was told to ignore the whole site. See <a href="/hamilton-seo-service/blog/robots-txt-mistakes/">robots.txt mistakes</a>.</li>
+</ul>
+
+<h2>URL Inspection: check one page</h2>
+<p>Paste any address from your site into the search bar at the top of Search Console. It tells you whether that page is indexed, when Google last crawled it, and whether it found problems.</p>
+<p>After you publish a new page or make a big change, you can use the "Request indexing" button here. It doesn't guarantee anything, but it asks Google to take another look.</p>
+
+<h2>Core Web Vitals: is your site fast enough?</h2>
+<p>This report groups your pages by how they perform for real visitors on mobile and desktop. Google rates them as good, needing improvement, or poor.</p>
+<p>Speed problems can be dramatic. On one site we audited, the main content took 27.7 seconds to appear on a phone. For a page-by-page breakdown, run the page through PageSpeed Insights. Our guide to <a href="/hamilton-seo-service/blog/page-speed-for-local-businesses/">page speed for local businesses</a> covers what to fix first.</p>
+
+<h2>Other reports worth knowing</h2>
+<ul>
+<li><strong>Sitemaps:</strong> confirms Google has read your sitemap.</li>
+<li><strong>Links:</strong> which sites link to you and which of your pages they link to. Useful if you ever suspect spam links.</li>
+<li><strong>Manual actions:</strong> tells you if Google has penalized your site by hand. You want this one to say no issues detected.</li>
+<li><strong>Security issues:</strong> flags hacked content or malware.</li>
+</ul>
+
+<h2>A simple monthly routine</h2>
+<ol>
+<li>Open the Performance report and compare the last 28 days with the same period last year.</li>
+<li>Sort pages by impressions. Look for good positions with weak clicks.</li>
+<li>Check the Pages report for any important page that has dropped out of the index.</li>
+<li>Glance at Core Web Vitals for new "poor" pages.</li>
+<li>Check Manual actions and Security issues are empty.</li>
+<li>Write down what you changed, so next month you can tell what worked.</li>
+</ol>
+
+<h2>Search Console vs keyword tools</h2>
+<p>Keyword tools like Ubersuggest are useful for comparing searches. But they model traffic. They don't measure it.</p>
+<p>On one site we checked, a keyword tool estimated traffic about five times higher than Search Console showed. If you're judging your SEO, or someone else's, use Search Console's numbers. It's the one source that comes straight from Google.</p>
+
+<h2>FAQ</h2>
+<div class="faq">
+<details>
+<summary>Is Google Search Console free?</summary>
+<div class="body"><p>Yes. It's free for any website owner. You only need a Google account and a way to prove you own the site.</p></div>
+</details>
+<details>
+<summary>What's the difference between Search Console and Google Analytics?</summary>
+<div class="body"><p>Search Console shows how people find you in Google Search, before they click. Analytics shows what they do once they're on your site. Both are free and they answer different questions.</p></div>
+</details>
+<details>
+<summary>Does Search Console show my Google Maps results?</summary>
+<div class="body"><p>Search Console covers your website in Google Search. Your Google Business Profile has its own performance figures for calls, direction requests and website clicks from the profile. Check both.</p></div>
+</details>
+<details>
+<summary>Should I give my SEO company access?</summary>
+<div class="body"><p>Yes, as a user. Keep yourself as the owner so the account stays with your business if you ever change providers.</p></div>
+</details>
+<details>
+<summary>What does average position mean?</summary>
+<div class="body"><p>It's roughly where your site appeared in the results, averaged across every time it showed. Position 1 is the top. It's a guide, not an exact spot, because results vary by searcher and location.</p></div>
+</details>
+</div>
+
+<p>Not sure what your Search Console is telling you? Our <a href="/hamilton-seo-service/technical-seo/">technical SEO</a> work starts there: indexing, blocked pages, speed and titles that rank but don't get clicked. Or ask for a free audit and we'll send you the three fixes that matter most.</p>
+</div></div></section>
+<section class="section related"><div class="wrap"><h2>Keep reading</h2><div class="cards"><a class="card card-link" href="/hamilton-seo-service/blog/seo-for-new-businesses/"><h3>SEO for new businesses</h3><p>What a brand-new local business should do first for SEO, in order, and the shortcuts that cost more than they save.</p><span class="more">Read more <svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a><a class="card card-link" href="/hamilton-seo-service/blog/seo-proposal-checklist/"><h3>SEO proposal checklist</h3><p>A practical checklist for reading an SEO proposal: what a good one includes, the red flags, and the questions to ask before you sign.</p><span class="more">Read more <svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a><a class="card card-link" href="/hamilton-seo-service/blog/seo-vs-google-ads/"><h3>SEO vs Google Ads</h3><p>A balanced look at SEO vs Google Ads for local businesses: rent vs ownership, when each makes sense, and how to use both.</p><span class="more">Read more <svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></div></div></section>
+<section class="cta-band"><div class="wrap"><div class="cta-box">
+  <p class="eyebrow">Free, no obligation</p>
+  <h2>Find out what's holding your Hamilton site back.</h2>
+  <p>Send us your website. We'll check how you show up on Google, Maps and AI search, and tell you the three fixes that matter most, in plain English.</p>
+  <div class="btns"><a class="btn btn-primary" href="/hamilton-seo-service/contact/">Get my free SEO audit</a><a class="btn btn-ghost" href="tel:+16479822545"><svg aria-hidden="true"><use href="#i-phone"/></svg>(647) 982-2545</a></div>
+</div></div></section></main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <a class="brand" href="/hamilton-seo-service/"><img src="/hamilton-seo-service/assets/favicon.svg" alt="" width="32" height="32"><span class="brand-name">Hamilton SEO</span></a>
+        <p>SEO, local SEO, Google Business Profile, websites and Google Ads for Hamilton businesses, explained in plain English.</p>
+        <p><a href="tel:+16479822545">(647) 982-2545</a><br><a href="mailto:kirill.s.anikin@gmail.com">kirill.s.anikin@gmail.com</a></p>
+        <p class="muted">Serving Hamilton, Stoney Creek, Ancaster, Dundas, Waterdown, Binbrook, Burlington and Grimsby.</p>
+        <p><a class="rating" href="https://www.google.com/maps?cid=2149003228337300842" rel="noopener" target="_blank"><span class="stars" aria-hidden="true">★★★★★</span> <strong>5.0</strong> from 16 Google reviews of Anikin Technologies</a></p>
+      </div>
+      <div class="foot-cols">
+        <nav aria-label="Services"><h2>Services</h2><ul class="foot-links"><li><a href="/hamilton-seo-service/local-seo/">Local SEO</a></li><li><a href="/hamilton-seo-service/google-business-profile-optimization/">Google Business Profile</a></li><li><a href="/hamilton-seo-service/technical-seo/">Technical SEO</a></li><li><a href="/hamilton-seo-service/seo-audit/">SEO Audit</a></li><li><a href="/hamilton-seo-service/content-marketing/">SEO Content Writing</a></li><li><a href="/hamilton-seo-service/ai-search-optimization/">AI Search Optimization</a></li><li><a href="/hamilton-seo-service/web-design/">Web design</a></li><li><a href="/hamilton-seo-service/google-ads/">Google Ads</a></li><li><a href="/hamilton-seo-service/ecommerce-seo/">Ecommerce SEO</a></li><li><a href="/hamilton-seo-service/seo-consultant/">SEO consultant</a></li></ul></nav>
+        <nav aria-label="Industries"><h2>Industries</h2><ul class="foot-links"><li><a href="/hamilton-seo-service/plumber-seo-hamilton/">Plumber SEO</a></li><li><a href="/hamilton-seo-service/hvac-seo-hamilton/">HVAC SEO</a></li><li><a href="/hamilton-seo-service/contractor-seo-hamilton/">Contractor SEO</a></li><li><a href="/hamilton-seo-service/landscaper-seo-hamilton/">Landscaping SEO</a></li><li><a href="/hamilton-seo-service/cleaning-company-seo-hamilton/">Cleaning company SEO</a></li><li><a href="/hamilton-seo-service/moving-company-seo-hamilton/">Moving company SEO</a></li><li><a href="/hamilton-seo-service/auto-repair-seo-hamilton/">Auto repair SEO</a></li><li><a href="/hamilton-seo-service/home-inspector-seo-hamilton/">Home inspector SEO</a></li><li><a href="/hamilton-seo-service/appliance-repair-seo-hamilton/">Appliance repair SEO</a></li><li><a href="/hamilton-seo-service/restaurant-seo-hamilton/">Restaurant SEO</a></li><li><a href="/hamilton-seo-service/interior-designer-seo-hamilton/">Interior designer SEO</a></li><li><a href="/hamilton-seo-service/accountant-seo-hamilton/">Accountant SEO</a></li></ul></nav>
+        <nav aria-label="Areas"><h2>Areas</h2><ul class="foot-links"><li><a href="/hamilton-seo-service/downtown-hamilton-seo/">Downtown Hamilton</a></li><li><a href="/hamilton-seo-service/hamilton-mountain-seo/">Hamilton Mountain</a></li><li><a href="/hamilton-seo-service/stoney-creek-seo/">Stoney Creek</a></li><li><a href="/hamilton-seo-service/ancaster-seo/">Ancaster</a></li><li><a href="/hamilton-seo-service/dundas-seo/">Dundas</a></li><li><a href="/hamilton-seo-service/waterdown-seo/">Waterdown</a></li><li><a href="/hamilton-seo-service/binbrook-seo/">Binbrook</a></li><li><a href="/hamilton-seo-service/burlington-seo/">Burlington</a></li><li><a href="/hamilton-seo-service/grimsby-seo/">Grimsby</a></li></ul></nav>
+        <nav aria-label="Company"><h2>Company</h2><ul class="foot-links"><li><a href="/hamilton-seo-service/about/">About</a></li><li><a href="/hamilton-seo-service/team/">Team</a></li><li><a href="/hamilton-seo-service/methodology/">How we work</a></li><li><a href="/hamilton-seo-service/pricing/">Pricing</a></li><li><a href="/hamilton-seo-service/faq/">FAQ</a></li><li><a href="/hamilton-seo-service/blog/">Blog</a></li><li><a href="/hamilton-seo-service/guides/">Buyer guides</a></li><li><a href="/hamilton-seo-service/resources/">Resources</a></li><li><a href="/hamilton-seo-service/contact/">Contact</a></li></ul></nav>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <p>&copy; 2026 Hamilton SEO. Hamilton SEO is operated by <a href="https://www.anikin.ca" rel="noopener">Anikin Technologies</a>.</p>
+      <p><a href="/hamilton-seo-service/privacy/">Privacy</a> · <a href="/hamilton-seo-service/terms/">Terms</a> · <a href="/hamilton-seo-service/sitemap/">Sitemap</a></p>
+    </div>
+  </div>
+</footer>
+<script src="/hamilton-seo-service/assets/site.js?v=d22a808e" defer></script>
+</body>
+</html>
