@@ -1,4 +1,4 @@
-/* Hamilton SEO. Dark theme, blue-to-violet accent, Playfair Display headings over Inter. Written for this site. */
+/* Hamilton Marketing Services. Dark theme, blue-to-violet accent, Playfair Display headings over Inter. Written for this site. */
 
 @font-face { font-family: "Inter"; src: url("fonts/inter-latin.woff2") format("woff2"); font-weight: 300 800; font-display: swap; }
 @font-face { font-family: "Playfair Display"; src: url("fonts/playfair-display-latin.woff2") format("woff2"); font-weight: 400 900; font-display: swap; }
@@ -72,7 +72,7 @@ header.site { position: sticky; top: 0; z-index: 50; background: rgba(10, 13, 20
 .brand:hover { color: var(--text); }
 .brand img { width: 32px; height: 32px; }
 .brand-text { display: flex; flex-direction: column; line-height: 1.1; }
-.brand-name { font-family: var(--serif); font-weight: 700; font-size: 1.2rem; }
+.brand-name { font-family: var(--serif); font-weight: 700; font-size: 1.2rem; white-space: nowrap; }
 .brand-tag { font-size: .72rem; color: var(--muted); letter-spacing: .02em; }
 nav.primary { margin-left: auto; }
 nav.primary > ul { display: flex; gap: 4px; list-style: none; margin: 0; padding: 0; }
@@ -83,11 +83,12 @@ nav.primary a:hover, nav.primary a[aria-current="page"], nav.primary .active > a
 .sub { position: absolute; top: calc(100% + 6px); left: 0; min-width: 270px; max-height: 70vh; overflow: auto; list-style: none; margin: 0; padding: 8px; background: var(--bg-2); border: 1px solid var(--line-2); border-radius: var(--radius); box-shadow: 0 24px 60px -20px rgba(0, 0, 0, .8); opacity: 0; visibility: hidden; transform: translateY(4px); transition: .15s; }
 .sub a { display: block; padding: 8px 12px; font-size: .92rem; }
 .has-sub:hover > .sub, .has-sub:focus-within > .sub { opacity: 1; visibility: visible; transform: none; }
-.bar-actions { display: flex; align-items: center; gap: 10px; }
+.bar-actions { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
 .menu-btn { display: none; background: none; border: 1px solid var(--line-2); color: var(--text); border-radius: 10px; padding: 8px; cursor: pointer; }
 .menu-btn svg { width: 22px; height: 22px; display: block; }
 
-@media (max-width: 1020px) {
+/* 1080, not 1020: the full brand name needs the room before the desktop menu fits beside it. */
+@media (max-width: 1080px) {
   .menu-btn { display: block; }
   nav.primary { position: fixed; inset: 70px 0 0 0; background: var(--bg); border-top: 1px solid var(--line); padding: 12px 20px 40px; overflow: auto; display: none; margin: 0; }
   nav.primary.open { display: block; }
@@ -97,7 +98,8 @@ nav.primary a:hover, nav.primary a[aria-current="page"], nav.primary .active > a
   .has-sub.open > .sub { display: block; }
   .brand-tag { display: none; }
 }
-@media (max-width: 420px) { .bar-actions .btn { display: none; } }
+@media (max-width: 520px) { .bar-actions .btn { display: none; } }
+@media (max-width: 380px) { .bar { gap: 12px; } .brand-name { font-size: 1rem; } }
 
 /* ---------- sections ---------- */
 .section { padding: 84px 0; }

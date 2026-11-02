@@ -1,9 +1,9 @@
-// Hamilton SEO: mobile menu and sub-menus.
+// Hamilton Marketing Services: mobile menu and sub-menus.
 (() => {
   const menuBtn = document.querySelector(".menu-btn");
   const nav = document.getElementById("primary-nav");
   if (!menuBtn || !nav) return;
-  const mobile = () => window.matchMedia("(max-width: 1020px)").matches;
+  const mobile = () => window.matchMedia("(max-width: 1080px)").matches;
   const setOpen = open => {
     menuBtn.setAttribute("aria-expanded", String(open));
     nav.classList.toggle("open", open);
